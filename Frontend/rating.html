@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Machine</title>
+    <link rel="icon" type="image/png" href="./images/E.png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- CONFETTI  -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
+    <script src="./scripts/confetti.js" defer></script>
+    <!-- CHART JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+
+
+</head>
+<body>
+   
+
+
+    <header class="flex">
+       <h1>Give the vote for your favorite person🤩</h1>
+    </header>
+    <div class="container flex">
+        <div class="connected"></div>
+        <canvas id="myChart" width="400" height="350"></canvas>
+        <div class="buttons">
+            <button data-index="0">Inder Sir</button>
+            <button data-index="1">Anandhu</button>
+            <button data-index="2">prashant</button>
+            <button data-index="3">Harshit</button>
+            <button data-index="4">Swapnil</button>
+            <button data-index="5">Priti</button>
+           <a href="./adminpol.html"> <button id="back">Back👈</button></a>
+        </div>
+      
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  let authToken = localStorage.getItem("authToken");
+  if(authToken){}
+  else{
+      Swal.fire({
+title: 'Login to Your account to visit this page',
+showClass: {
+  popup: 'animate__animated animate__fadeInDown'
+},
+hideClass: {
+  popup: 'animate__animated animate__fadeOutUp'
+}
+})
+
+setTimeout(()=>{ window.location.href="./login.html"},2000)
+      
+      
+     }
+</script>
+</html>

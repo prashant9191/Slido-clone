@@ -1,0 +1,718 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/3188416.jpg");
+}
+/* header &navbar */
+
+  /* -----------navbar css-------------- */
+  header ul,footer ul{
+    list-style-type: none;
+  }
+  header a, footer a{
+    text-decoration: none;
+  }
+  header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .fixedHeader{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+  }
+  #category_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#ECEFF1;
+  }
+  div.categories{
+    height: 65px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.categories li{
+    display: flex;
+    margin-right:-5px;
+    font-size: 1.5vw;
+    height: 70%;
+    align-items: center;
+  }
+  div.categories li.categ,div.categories li.active{
+    padding:13px;
+    font-weight: bold;
+  }
+  div.categories li.res_category{
+    padding:13px;
+    font-weight: bold;
+  }
+  div.categories li.res_category:hover{
+    height: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(86, 46, 196) 0%, rgb(35, 201, 203) 100%);
+    color:white;
+  }
+  div.categories li.categ:hover{
+    height: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(86, 46, 196) 0%, rgb(35, 201, 203) 100%);
+    /* color:white; */
+  }
+  #navleftdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category_img{
+    width: 30%;
+    padding:0px 10px;
+    background-color:#FAFAFA;
+  }
+  .category_img>a>img{
+    margin-top: 3px;
+    height: 60px;
+  }
+  #registerdiv{
+    margin-right:20px ;
+    border-radius: 5px;
+  }
+  #registerdiv>a{
+    margin-right: 4px;
+    margin-left: 4px;
+    border: none;
+    font-size: 18px;
+    padding: 17px 15px;
+    color: white;
+    font-weight: bold;
+    background-color:#673AB7 ;
+    border-radius: 6px;
+  }
+  #registerdiv>a:hover{
+    color: #fff;
+    background-color: black;
+  }
+  /* Categories */
+  /* Box Dropdown */
+  div.boxDropdown{
+    width:50%;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 22%;
+    display:none; 
+    z-index:10;
+    background:rgb(209, 209, 209); 
+  }
+  div.boxDropdown > div{
+    display:flex;
+    background:white;
+    position: absolute;
+    z-index:10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    left:-15px;
+    top:0;
+    flex-direction: row;
+  }
+  .category{
+    padding:0px 20px;
+    width: 150px;
+  }
+  
+  .category>ul>li{
+    font-size: 15px;
+    line-height: 2.5;
+    font-weight: bold;
+  }
+  .dropdown_img img{
+    height:450px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .dropdown_img{
+    margin-bottom: -4px;
+  }
+  .workingLinks{
+    font-weight: bold;
+  }
+  .boxDropdown ul li:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    transition:ease-in-out .4s;
+    cursor: pointer;
+    color: #FF1744;
+}
+  /* navbar and dropdown styles ends here */
+
+  /* -------------------sidenavbar-------------- */
+  #hiddenside{
+    display: none;
+  }
+  #sidebarcontainer{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+  }
+  #sidebarcontainer  div.category_img img{
+    margin-right: 10px;
+  }
+    #sidebar .fa{
+        color: #E0E0E0;
+    }
+    #sidebar .newfa{
+        color: #0d0c0c;
+    }
+    #sidebar{
+      display: block;
+        position: fixed;
+        top:0;
+        width: 230px;
+        height: 100vh;
+        background:#3F51B5;
+        left: -230px;
+        transition: .6s;
+        z-index: 200;
+    }
+    #sidebar.inandout{
+        left: 0;
+    }
+    #sidebar div{
+        font-size: 22px;
+        color: gray;
+        text-align: left;
+       
+        line-height: 40px;
+        user-select: none;
+    }
+    #sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(255,255,255,.1);
+        transition: .9s;
+    }
+   #sidebar ul li:hover{
+        padding-left: 15px;
+        transition:ease-in-out .4s;
+        cursor: pointer;
+    }
+    #sidebar ul a i{
+        margin-right: 30px;
+    }
+    .icolortoblack i{
+      color: #263238;
+    }
+    .sliderbtn{
+        position: absolute;
+        z-index: 20;
+        top: 19px;
+        right:-45px ;
+        width: 45px;
+        height: 35px;
+        outline: none;
+        border: none;
+        transition: .4s;
+    }
+    .hamburger{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 30px;
+        height: 3px ;
+        background: #262626;
+    }
+    .hamburger::after{
+        top: 12px;
+        
+    }
+    .hamburger::before{
+        top: -12px;
+        
+    }
+    .hamburger::after,
+    .hamburger::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #262626;
+    left: 0;
+    transition: .6s;
+    z-index: 100;
+    
+    }
+    .sliderbtn.active .hamburger{
+       background: none;
+    }
+    .sliderbtn.active .hamburger::after{
+       transform: rotate(-45deg);
+       top: 0;
+       
+    }
+    .sliderbtn.active .hamburger::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+     /* -------------------sidenavbar styles ends here-------------- */
+ 
+
+
+#mastercontainer {
+  width: 100%;
+  margin-top: 100px;
+}
+/* ------------css for loding animation------------- */
+#loding_container{
+  display: none;
+  transition: ease-in-out 0.5s;
+}
+#loding_div{
+  position: fixed;
+  top: 200px;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 500;
+}
+#loding_div>img{
+  width: 120px;
+}
+#loding_div>h2{
+  text-align: center;
+  color: #ee0606;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+
+/* ------------css for loding animation Ended here ------------ */
+
+
+/* ------------all btn contorling div styles--------------- */
+
+#allbtnsdiv {
+  /* margin-top: 8%; */
+  margin-bottom: 6%;
+}
+#allbtnsdiv h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  color: #ff1744;
+}
+
+/* ----------------quiz container div styles----------------- */
+#quizz_cont {
+  width: 100%;
+  display: none;
+}
+#quizz_cont > form {
+  width: 90%;
+  margin: auto;
+}
+#quizz_cont > form > h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  color: #ff1744;
+}
+.question_div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  transition: ease-in-out 0.3s;
+}
+.question_div p {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+.question_div input {
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(86, 46, 196) 0%,
+    rgb(35, 201, 203) 100%
+  );
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+}
+.question_div:hover {
+  transform: scale3d(1.02, 1.02, 1.02);
+}
+.question_div input#que_stion_number {
+  width: 77%;
+}
+.options > div {
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+  width: 50%;
+  margin: auto;
+}
+.options > div:hover {
+  transform: scale3d(1.02, 1.02, 1.02);
+}
+.options > div p {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+.options > div input {
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(86, 46, 196) 0%,
+    rgb(35, 201, 203) 100%
+  );
+  color: white;
+  font-size: 16px;
+  transition: ease-in-out 0.5s;
+  margin: 5px;
+}
+.options > div:last-of-type input {
+  background: #b0bec5;
+  color: #ff1744;
+  width: 100px;
+}
+.controller_div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.controller_div button {
+  margin: 30px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b0bec5;
+  transition: ease-in-out 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.controller_div button:hover {
+  color: white;
+  background-color: #ff1744;
+  cursor: pointer;
+}
+
+.one_que {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.one_que > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+.one_que > div > p:first-of-type {
+  margin-right: 10px;
+}
+#qp {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
+#edit_que {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
+input::placeholder {
+  color: rgb(235, 233, 233);
+}
+
+#deletingdiv {
+  display: none;
+}
+#deletingdiv > div > div {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+/* ---------------preview styling-------------- */
+.preview_question_tab {
+  background-color: #ffc107;
+  transition: ease-in-out 0.3s;
+}
+.even_option {
+  background-color: #90caf9;
+  transition: ease-in-out 0.3s;
+}
+.odd_option {
+  background-color: #b0bec5;
+  transition: ease-in-out 0.3s;
+}
+.ans_option {
+  background-color: #a5d6a7;
+  transition: ease-in-out 0.3s;
+}
+.preview_question_tab:hover,
+.even_option:hover,
+.odd_option:hover,
+.ans_option:hover {
+  background-color: #ff1744;
+  transform: scale3d(1.02, 1.02, 1.02);
+}
+
+/* ----------------styles for previous quiz data-------------- */
+
+#previous_quizes h1 {
+  color: #ff1744;
+  font-size: 30px;
+  text-align: center;
+}
+
+.quiz-container {
+  /* border: 2px solid white; */
+  padding: 20px 40px;
+  color: white;
+  font-size: 17px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px 50px;
+}
+
+.quiz-container p:nth-child(1) {
+  color: #ffc107;
+  font-size: 27px;
+  text-align: center;
+  font-weight: bold;
+}
+.quiz-container ul {
+  list-style: none;
+}
+.answer_que {
+  margin-bottom: 15px;
+}
+.quiz-container li,
+.quiz-container p {
+  transition: ease-in-out 0.2s;
+}
+.quiz-container li:hover,
+.quiz-container p:hover {
+  color: #ff1744;
+}
+
+/* -------------styles for rankings------------ */
+#ranks {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#participant-list h1 {
+  color: #ff1744;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+#participant-list li {
+  padding: 20px 40px;
+  list-style: none;
+  line-height: 1.5;
+  font-size: 17px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px 50px;
+  transition: ease-in-out 0.3s;
+  margin: 20px 0;
+}
+#participant-list li h2 {
+  text-align: center;
+  color: #90caf9;
+}
+#participant-list li h2:hover {
+  color: #ffc107;
+}
+#participant-list li p:hover {
+  color: #ff1744;
+}
+
+/* ---------------styles for deleting quiz room---------- */
+.hdelete {
+  text-align: center;
+  margin: 20px 0;
+  color: #ff1744;
+}
+#deletesubquiz {
+  display: none;
+}
+
+/* ----------------styles for footer ----------------------- */
+#footer {
+  background-color: #673ab7;
+  color: white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: rgb(238, 10, 124);
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: ease-in-out 0.4s;
+}
+#footersubcontainer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 2;
+}
+
+#footersubcontainer a {
+  color: white;
+  text-decoration: underline;
+}
+#footersubcontainer a:nth-child(2) {
+  margin-left: 15px;
+}
+#footerbase {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 4%;
+  line-height: 2;
+}
+#footerbase > div:nth-child(1) {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.aboutus a {
+  display: block;
+}
+#socilmedia {
+  display: flex;
+  justify-content: space-between;
+}
+#copyrights {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#easypolls {
+  margin-left: 15px;
+}
+
+/* -----------------media quries----------------- */
+
+/* footer responsive */
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+  #fixedheadertop{
+    display: none;
+  }
+  #hiddenside{
+    display: block;
+  }
+  div.categories li{
+    font-size: 4vw;
+  }
+  .question_div,
+  .options > div {
+    width: 100%;
+  }
+  .controller_div {
+    width: 90%;
+  }
+  .controller_div button {
+    width: 45%;
+  }
+  #previous_quizes {
+    width: 90%;
+    margin: auto;
+  }
+  .one_que > div {
+    width: 100%;
+  }
+  #allbtnsdiv > h2 {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  #footersubcontainer div {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #footerbase {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+
+  #footerbase > div:nth-child(1) {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #footerbase > div:nth-child(1) .aboutus {
+    margin-bottom: 20px;
+  }
+
+  #socilmedia {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll</title>
+    <link rel="icon" type="image/png" href="./images/E.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/adminpoll.css">
+    <script src="https://kit.fontawesome.com/3e90fa2a97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.sliderbtn').click(function () {
+                $('.sliderbtn').toggleClass('active');
+                $('#sidebar').toggleClass('inandout');
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    
+
+    <header>
+        <div id="hiddenside">
+            <div id="sidebarcontainer">
+                <div>
+                    <div id="sidebar">
+                        <div>
+                            <button class="sliderbtn" id="sliderbutton">
+                                <div class="hamburger">
+                                </div>
+                            </button>
+                            <ul>
+                                <li style="background-color: #CFD8DC;"><a href="./index.html"><i
+                                            class="fa fa-bars newfa"></i><img src="./images/E.png"
+                                            style="width: 150px;height: 45px;position: absolute;" alt=""></a></li>
+                                <li><a href="./index.html"><i class="fa fa-house"></i>Home</a></li>
+                                <li id="men_p"><a href="./rating.html" target="_blank" class="icolortoblack"><i
+                                            class="fa-solid fa-signal fa"></i>Live Polls</a></li>
+                                <li id="women_P"><a href="" target="_blank" class="icolortoblack"><i
+                                            class="fa-solid fa-square-poll-vertical fa"></i>Live Q&A</a></li>
+                                <li id="kid_P"><a href="./quizz_question.html" target="_blank" class="icolortoblack"><i
+                                            class="fa-solid fa-list fa"></i>Qizzes</a></li>
+                                <li id="fot_w"><a href="./pricing.html" target="_blank" class="icolortoblack"><i
+                                            class="fa-solid fa-sack-dollar fa"></i>Pricing</a></li>
+                                <li><a href=""><i class="fa-solid fa-pen-to-square fa"></i>Surveys</a></li>
+                                <li><a href="" class="icolortoblack"><i class="fa-solid fa-user-secret fa"></i>Admin
+                                        Panel</a></li>
+                                <li><a href="./signUp.html"><i class="fa fa-address-card"></i>Sign Up</a></li>
+                                <li><a href="./login.html"><i class="fa fa-right-to-bracket"></i>Log In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="category_img">
+                        <a href="./index.html"><img src="./images/E.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixedHeader" id="fixedheadertop">
+            <div id="category_container">
+                <div id="navleftdiv">
+                    <div class="category_img">
+                        <a href="./index.html"><img src="./images/E.png" /></a>
+                    </div>
+                   
+                    <div class="categories">
+                        <li class="categ">Products</li>
+                        <li class="categ">Solutions</li>
+                        <li class="res_category">Resources</li>
+                        <li class="res_category"><a href="./pricing.html">Pricing</a></li>
+                    </div>
+                </div>
+                <!--%%%%%%%%%%%%% updating data over here -->
+                <div id="registerdiv">
+                    <a href="./login.html">Log In</a>
+                    <a href="./signUp.html">Sign Up</a>
+                    
+                </div>
+
+                <div id="profile" class="categories">
+                    <!-- <li><img style="width: 40px;" src="https://t4.ftcdn.net/jpg/04/30/11/17/360_F_430111710_fXWQdohsNzMe679XSbn4LSjCvl3VtisP.jpg" alt=""></li>
+                    <li style="font-size: large;" class="categ">Anandhu</li>
+                    <div id="registerdiv">
+                        <a href="./signUp.html">Sign Up</a>
+                    </div> -->
+                </div>  
+            
+            </div>
+
+            <div class="boxDropdown">
+                <div>
+                    <div class="category">
+                        <ul>
+                            <li><a href="./productTour.html">Product Tour</a></li>
+                            <li><a href="./rating.html">Live Polls</a></li>
+                            <li><a href="./adminpolled.html">Live Q&A</a></li>
+                           
+                            <li><a href="./quizz_question.html">Create Quiz</a></li>
+                            <li><a href="./quizz.html"> Quiz</a></li>
+                            <li><a href="./Rankindex.html">Ranking</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="dropdown_img">
+                        <div>
+                            <img src="./images/dorpdown_product_img.png" alt="products img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxDropdown">
+                <div>
+                    <div class="category" id="secondbox">
+                        <ul>
+                            <li>Remote Meetings</li>
+                            <li>Hybrid Meetings</li>
+                            <li>Virtual Meetings</li>
+                            <li>All-hands Meetings</li>
+                            <li>Webinars</li>
+                            <li>Conference</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown_img">
+                        <img src="./images/dorpdown_product_img+2.png" alt="Solutions img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    
+
+
+    <div id="maincontainer">
+        <div id="events">
+            <div>
+                <button style="color: #2339b8;  border-bottom:3px solid #2339b8;">Live Polls</button>
+                <button>Audience Q&A</button>
+                <button>Analytics</button>
+            </div>
+        </div>
+        <div id="live-polls">
+    
+    
+            <div id="crete-pollbox">
+                <h4>When do you want to use EasyPoll?</h4>
+                    <div id="date">
+                        <div>
+                            <label for="" >Start date</label>
+                            <br>
+                            <input type="date" id="start-date" >
+                        </div>
+                        <div>
+                            <label for="" id="end-date-label">End date</label>
+                            <br>
+                            <input type="date" name="" id="end-date">
+                        </div>
+                    </div> 
+                    <br>
+                    <p>Give Your Poll a name</p>
+                    <input type="text" placeholder="Poll Name" id="poll-name">
+                    <br>
+                    <button id="participate">Anyone with the code or link can participate</button>
+                    <button id="cancel">Cancel</button>
+                    <button id="submit">Create Poll</button>
+    
+            </div>
+    
+    
+    
+    
+    
+    
+            <div id="child1">
+                <h2>Create Your Polls</h2>
+                <p>Engage your audience with live polls, surveys or quizzes.</p>
+                <input type="text" id="open-text" placeholder="What Would you like to ask?*">
+                <br>
+                <button id="launch"><i style="margin-right: 7px; color: rgb(55, 209, 55);"
+                        class="fa-solid fa-play"></i>Launch</button>
+                <button id="save">Save</button>
+            </div>
+    
+    
+    
+            <div id="child3">
+                <h1>Create your polls</h1>
+                <p>Engage your audience with live polls, surveys or quizzes.</p>
+               
+                <div>
+                    <!-- <div>
+                        <img src="./logo/multiplechoice.png" alt="">
+                        <p>multiple choice</p>
+                    </div>
+                    <div>
+                        <img src="./logo/wordcloud.png" alt="">
+                        <p>Word Cloud</p>
+                    </div> -->
+    
+                    <div id="Quiz">
+                        <img src="./logo/quiz.png" alt="">
+                        <p>Quiz</p>
+                    </div>
+                    <div id="Rating">
+                        <img src="./logo/rating.png" alt="">
+                        <p>Rating</p>
+    
+                    </div>
+                    <div id="create-poll">
+                        <img src="./logo/opentext.png" alt="">
+                        <p>Open Text</p>
+                    </div>
+                    <div id="Ranking">
+                        <img src="./logo/ranking.png" alt="">
+                        <p>Ranking</p>
+                    </div>
+                </div>
+                
+    
+            </div>
+    
+    
+    
+    
+            <div id="child2">
+                <h2>Your Slido event is active</h2>
+                <br>
+                <p>Create and launch polls to collect responses.</p>
+                <br>
+                <p id="code">Your participants can interact with your Slido
+                    event by joining at Slido.com with the code
+                    #2533203</p>
+                <button id="share-link">Share link</button>
+                <button id="present">Present</button>
+                <p style="margin-top: 20px;">Not sure where to start? <a href="#" style="color: grey;">Watch tutorial</a>
+                </p>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./scripts/adminpol.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    let authToken = localStorage.getItem("authToken");
+    if (authToken) { }
+    else {
+        Swal.fire({
+            title: 'Login to Your account to visit this page',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
+
+        setTimeout(() => { window.location.href = "./login.html" }, 2000)
+
+
+    }
+</script>
+
+
+<script>
+    let userData = JSON.parse(localStorage.getItem("userData"));
+    let profile = document.getElementById("profile");
+    let preDiv = document.getElementById("registerdiv");
+    preDiv.style.display="block"
+    profile.style.display="none"
+     if(userData){
+           preDiv.style.display='none'
+           profile.style.display="flex"
+           profile.innerHTML= ` <li><img style="width: 40px;border-radius:50%;" src="${userData.profilePic}" alt=""></li>
+                        <li style="font-size: large;" class="categ">${userData.name}</li>
+                        <div id="registerdiv">
+                            <a onclick=signOut()>Logout</a>
+                        </div>`
+           
+     }
+    
+    //userDiv.innerHTML=`<li class="categ">Anandhu</li>`
+    function signOut(){
+        Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Logout!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem("userData");
+        localStorage.removeItem("authToken");
+        Swal.fire(
+          'Logout successfull!',
+          
+          'success'
+        )
+        setTimeout(()=>{window.location.href="./index.html"},1000)
+      }
+    })
+       
+    }
+    
+    </script>
+
+    

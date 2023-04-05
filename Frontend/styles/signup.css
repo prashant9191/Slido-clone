@@ -1,0 +1,296 @@
+:root{
+    --main-color:#673AB7;
+    --background:#f3f3f3;
+
+} 
+ body{
+    background-color:var(--background);
+ }
+ 
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    /* background-color: rgb(219, 130, 21); */
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+#left{
+    width: 25%;
+    height: 120vh;
+    background-color: var(--main-color);
+    padding: 0px 20px;
+    
+    
+}
+#left>*{
+    color: #fff;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+#left h1{
+    font-size:xx-large;
+    color: #fff;
+    margin-top: 150px;
+}
+#left p{
+    font-size: x-large;
+}
+#left div{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    
+}
+#left input{
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+    border:0px;
+    border-radius: 50px;
+    font-size: x-large;
+    
+    text-align: center;
+
+}
+#left input:focus{
+    outline: none;
+}
+ .fa-solid{
+    color: var(--main-color);
+    font-size: x-large;
+   
+}
+.fa-hashtag{
+    font-size: xx-large;
+    margin-left: 20px;
+}
+#enter{
+    margin: 0px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+ 
+
+}
+#code{
+    background-color:#fff;
+}
+#enter:hover{
+    background-color: #000;
+}
+#enter> .fa-solid{
+    color: #fff;
+}
+
+
+#right{
+    width: 75%;
+    height: 150vh;
+    background-color: #f3f3f3;
+   
+    
+}
+
+/* start  */
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 0px;
+    
+    color: var(--main-color);
+    
+  }
+  
+  #container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+   
+  }
+  
+ 
+  
+
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: large;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+  }
+  .submit{
+    padding: 15px 30px;
+    border-radius: 10px;
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: 0px ;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: x-large;
+    cursor: pointer;
+  }
+
+  #container>img{
+    width: 60px;
+    margin: 0px;
+    
+  }
+  #container>h1{
+    font-size: x-large;
+    color: var(--main-color);
+  }
+  #container{
+    
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  #dontHaveAccount{
+    color: #494745;
+    font-size: large;
+    margin: 30px;
+  }
+  #dontHaveAccount a{
+    color: var(--main-color);
+  }
+#errorDisplay{
+color: red;
+font-size: large;
+height: 10px;
+width: auto;
+margin-top: 5px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+}
+/* .redBorder{
+    border: 1px solid red;
+} */
+#google{
+    background-color: #fff;
+    
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: large;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #494745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+   
+   
+}
+a{
+    text-decoration: none;
+}
+#google>img{
+    height: 30px;
+    margin-right: 10px;
+}
+.box{
+    padding: 25px 30px;
+    border-radius: 10px;
+   
+}
+.box:focus{
+outline: none;
+}
+/* end */
+
+/*modal start*/
+
+/*modal end*/
+
+
+
+
+
+
+@media all and (max-width:599px){
+    /* mobile */
+    body{
+        
+    }
+    #right{
+        width: 100%;
+    }
+    .container{
+        padding-top: 0px;
+        flex-direction: column-reverse;
+    }
+    #container{
+        width: 90%;
+        
+        margin: 0px;
+        }
+}
+
+@media all and (max-width:1200px){
+    /* tablet */
+  
+        
+    .container{
+        flex-direction: column-reverse;
+        
+    }
+    #left{
+        width: 75%;
+        height: auto;
+    }
+    #right{
+        width: 100%;
+    }
+    #left h1{
+        margin-top: 20px;
+    }
+
+}

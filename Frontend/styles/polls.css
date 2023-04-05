@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("../productimages/voting\ gif2.gif");
+    background-repeat: none;
+    background-size: cover;
+    
+}
+
+
+
+
+
+
+.outer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background-color: rgb(35,103,166);
+    /* background-color: black; */
+    margin-top: 0px;
+    height: 63px;
+    margin-bottom: 30px;
+    
+}
+h2{
+    color: antiquewhite;
+    font-size: large;
+    font-weight: 200;
+    margin-top: 15px;
+}
+.store{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    
+}
+ .nav{
+    display: flex;
+    
+} 
+.nav>h2{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.nav-mid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.nav-mid>h2{
+    margin-left: 10px;
+}
+
+
+.nav-last{
+    margin-left: 200px;
+    margin-right: 60px;
+    /* border: 1px solid green; */
+}
+
+.question{
+    width: 300px;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid rgb(255, 72, 0);
+    color: blue;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-image: url("../productimages/questions.jpg");
+    background-repeat: none;
+    background-size: 55%;
+    
+}
+
+.display{
+    width: 300px;
+    height: 60px;
+  
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  
+}
+#response-form{
+    display: flex;
+    flex-direction: column;
+}
+ #res{
+    width: 300px;
+    height: 40px;
+    
+}
+#sub{
+    border: none;
+    /* border-radius: 10px; */
+    background-color: black;
+    color: whitesmoke;
+    font-weight:bold;
+    padding: 8px;
+    margin-top: 40px;
+    margin-left: 88px;
+    width: 46%;
+    height: 47px;
+    border-radius: 4px;
+  
+    
+}
+#sub:focus {
+      outline: none;
+  }
+  
+#sub:hover {
+      transform: scale(1.1);
+      background-color: #ff1744;
+      /* background:linear-gradient(to right,#0288D1,#81D4FA); */
+} 
+
+input{
+    border: 3px solid black;
+    /* text-align: center; */
+    margin-left: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+   
+}
+
+@media screen and (max-width: 1368px){
+    .outer{
+        display: block;
+    }
+    .nav-mid{
+        margin-left: 57px;
+        margin-top: -10px;
+        width: 13%;
+    }
+    h2{
+        width: 39%;
+        margin-top: -14px;
+        margin-left: 160px;
+    }
+    body{
+     
+        display: block;
+        background: none;
+    }
+   
+
+
+
+    
+}
+
+
+
+
+

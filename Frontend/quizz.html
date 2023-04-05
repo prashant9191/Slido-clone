@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="icon" type="image/png" href="./images/E.png">
+    <link rel="stylesheet" href="./styles/quizz.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header >
+        <a href="./index.html">
+        <i id="fa-solid" class="fa-solid fa-house"></i>
+        </a>
+        <a href="./index.html">
+        <img style="width:80px;height: 40px;" src="./images/e2.png" alt="">
+        </a>
+        <a href="./login.html">
+        <i id="fa-solid"  class="fa-solid fa-user"></i>
+        </a>
+    </header>
+    <div id="loding_container">
+        <div id="loding_div">
+          <img src="./images/loding.gif" alt="" srcset="">
+          <h2>Please Wait...</h2>
+        </div>
+      </div>
+   <div id="timercatiner">
+    <div id="timer">
+        <h2>Time Left: <span id="time"></span></h2>
+    </div>
+   </div>
+    <div id="user_details">
+        <div class="question_div">
+            <p class="quest_num">Name:</p>
+            <input
+              type="text"
+              placeholder="Enter your Name"
+              id="user_name"
+            />
+        </div>
+        <div class="question_div">
+            <p class="quest_num">Room Name:</p>
+            <input
+              type="text"
+              placeholder="Enter your Quizz Room Name"
+              id="Quizz_room_name"
+            />
+        </div>
+        <div class="controller_div">
+            <button id="roombtn">Start Quiz</button>
+          </div>
+    </div>
+    <section class="main">
+        <div class="glowing-border">
+            <div class="container">
+                <div class="col">
+                    <h3 id="questionBox">
+                        Question tag
+                    </h3>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="first" value="a" required>
+                    <label for="first">Option 1</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="second" value="b" required>
+                    <label for="second">Option 2</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="third" value="c" required>
+                    <label for="third">Option 3</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fourth" value="d" required>
+                    <label for="fourth">Option 4</label>
+                </div>
+                <button id="submit">Submit Answer</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./scripts/quizz.js"></script>
+</html>

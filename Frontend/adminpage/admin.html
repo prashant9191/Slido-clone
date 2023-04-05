@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b4c8ae89b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./admin.css" />
+    <title>ADMIN DASHBOARD</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sliderbtn").click(function () {
+          $(".sliderbtn").toggleClass("active");
+          $("#sidebar").toggleClass("inandout");
+        });
+      });
+    </script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <div id="sidebar">
+        <div>
+          <button class="sliderbtn" id="sliderbutton">
+            <div class="hamburger"></div>
+          </button>
+          <ul>
+            <li style="background-color: #cfd8dc">
+              <a href="../index.html"
+                ><i class="fa fa-bars"></i
+                ><img
+                  src="../images/E.png"
+                  style="width: 150px; height: 45px; position: absolute"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="../index.html"><i class="fa fa-house"></i>Home</a>
+            </li>
+            <li id="men_p">
+              <a href="../productTour.html"  class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Product's Tour</a
+              >
+            </li>
+            <li id="women_P">
+              <a href="../quizz_question.html" class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Create Quiz</a
+              >
+            </li>
+            <li>
+              <a href="https://quiz-page-mu.vercel.app/" 
+                ><i class="fa fa-cart-shopping"></i>Participate In Quiz</a
+              >
+            </li>
+            <li id="kid_P">
+              <a href="../adminpol.html" class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Open Text</a
+              >
+            </li>
+            <li id="fot_w">
+              <a href="../rating.html"  class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Rating</a
+              >
+            </li>
+            <li>
+              <a href="../Rankadmin.html"  class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Create Ranking</a
+              >
+            </li>
+            <li>
+              <a href="../polls.html"  class="icolortoblack"
+                ><i class="fa-brands fa-product-hunt"></i>Add Responses</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar__left">
+          <a class="active_link" href="#">Admin</a>
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="" alt="" />
+          </a>
+        </div>
+      </nav>
+      <div id="loding_container">
+        <div id="loding_div">
+          <img src="./loding.gif" alt="" srcset="" />
+          <h2>Please Wait...</h2>
+        </div>
+              
+      </div>
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img
+              id="admin_img"
+              src="https://i.pinimg.com/originals/7d/34/d9/7d34d9d53640af5cfd2614c57dfa7f13.png"
+              alt=""
+            />
+            <div class="main__greeting">
+              <h1 id="admin_name_h1">Hello Admin</h1>
+              <p id="admin_welcome">
+                Welcome to your personalised admin dashboard
+              </p>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+            <div class="card">
+              <i class="fa-solid fa-user fa-2x text-red" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Users</p>
+                <span id="totuser" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-brands fa-product-hunt fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Events</p>
+                <span id="women_pro_" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-solid fa-list fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Quizes</p>
+                <span id="totproducts" class="font-bold text-title">0</span>
+              </div>
+            </div>
+            <div class="card">
+              <i
+                class="fa-brands fa-product-hunt fa-2x text-red"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Total Participents Of Quiz</p>
+                <span id="menproducts_" class="font-bold text-title">0</span>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN CARDS ENDS HERE -->
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__left">
+              <h2>All User's Info</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Plan</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_"></tbody>
+              </table>
+            </div>
+
+            <div class="charts__right">
+              <h2>All Events</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Event Code</th>
+                    <th>Event Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_footwear"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="charts">
+            <div class="charts__left">
+              <h2>Quiz's Rooms</h2>
+              <div id="previous_quizes"></div>
+            </div>
+
+            <div class="charts__right">
+              
+              <h2>Details Of Quiz Participents</h2>
+              <div id="ranks">
+                <div id="participant-list"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHARTS ENDS HERE -->
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./admin.js"></script>
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    let authToken = localStorage.getItem("authToken");
+    if (authToken) { 
+      const userid = JSON.parse(localStorage.getItem("userData"));
+      if(userid.name=="admin"&&userid.email=="admin@gmail.com"){
+
+      }else{
+        Swal.fire({
+            title: 'Login Using Admin Credentials You are not Authorized To a',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
+
+        setTimeout(() => { window.location.href = "../index.html" }, 2000)
+      }
+    }
+    else {
+        Swal.fire({
+            title: 'Login to Your account to visit this page',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
+
+        setTimeout(() => { window.location.href = "../index.html" }, 2000)
+
+
+    }
+</script>
+</html>
