@@ -1,4 +1,4 @@
-<p align="center"> ORIGNAL REOP [LINK](https://github.com/prititi/fun-note-365-) WHERE I CONTRIBUTED IN THIS PROJECT </p>
+<p align="center"> ORIGNAL REOP - [LINK](https://github.com/prititi/fun-note-365-) WHERE I CONTRIBUTED IN THIS PROJECT </p>
 
 # Easy Polls
 Easy polls is the ultimate Q&A and polling platform for live and virtual meetings and events.
