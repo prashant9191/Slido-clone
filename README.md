@@ -1,3 +1,5 @@
+<p align="center"> ORIGNAL REOP <a src="https://github.com/prititi/fun-note-365-">LINK</a> WHERE I CONTRIBUTED IN THIS PROJECT </p>
+
 # Easy Polls
 Easy polls is the ultimate Q&A and polling platform for live and virtual meetings and events.
 
@@ -6,8 +8,7 @@ Easy polls is the ultimate Q&A and polling platform for live and virtual meeting
 
 This project is deployed on vercel here - [Easy Polls](https://fun-note-365-fsps.vercel.app/)
 
-<p align="center"> ORIGNAL REOP LINK WHERE I CONTRIBUTED IN THIS PROJECT </p>
-- [Repo Link](https://github.com/prititi/fun-note-365-)
+
 
 ---
 
